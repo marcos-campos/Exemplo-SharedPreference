@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Configurações"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:background="@android:color/holo_red_dark"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/first_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Permanecer ativo"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_switch"
+        android:text="Desbloqueio de OEM"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_switch" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/third_switch"
+        android:checked="true"
+        android:text="Atualização automática do sistema"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/second_switch" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fourth_switch"
+        android:text="Depuração USB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/third_switch" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fifth_switch"
+        android:checked="true"
+        android:text="Verificar apps por USB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourth_switch"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="SALVAR"
+        android:backgroundTint="@color/black"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
